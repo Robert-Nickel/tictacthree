@@ -145,12 +145,13 @@ h2 {
 .board {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
   width: min(90vw, 320px);
-  padding: 10px;
   background: rgba(0, 255, 255, 0.1);
   border-radius: 10px;
   box-shadow: 0 0 10px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+  margin: auto; /* Center the board */
+  gap: 3px;
+
 }
 
 /* Tic-Tac-Toe Cells */
@@ -163,8 +164,8 @@ h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #0ff;
+
   background: rgba(0, 0, 0, 0.8);
-  border: 2px solid #0ff;
   text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
   cursor: pointer;
   transition: 0.3s;
@@ -256,4 +257,5 @@ h2 {
     background: inherit;
     box-shadow: none;
 }
+
 </style>
